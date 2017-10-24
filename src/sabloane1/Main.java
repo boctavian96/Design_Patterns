@@ -9,7 +9,7 @@ package sabloane1;
  *
  * @author octavian
  */
-public class Sabloane1 {
+public class Main {
 
     /**
      * @param args the command line arguments
