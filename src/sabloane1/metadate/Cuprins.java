@@ -3,12 +3,23 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sabloane1;
+package sabloane1.metadate;
 
 /**
  *
  * @author octavian
  */
-public class Sectiune extends ElementPagina {
+public class Cuprins {
+    private String cupr;
     
+    public void setCuprins(String x)
+    {
+        this.cupr = x;
+    }
+    
+    public String getCuprins()
+    {
+        return cupr;
+    }
+ 
 }

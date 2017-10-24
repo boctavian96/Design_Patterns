@@ -3,23 +3,24 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sabloane1;
+package sabloane1.metadate;
 
 /**
  *
  * @author octavian
  */
-public class Cuprins {
-    private String cupr;
+public class Autor {
     
-    public void setCuprins(String x)
+    private String nume;
+    
+    public void setNume(String x)
     {
-        this.cupr = x;
+        this.nume = x;
     }
     
-    public String getCuprins()
+    public String getNume()
     {
-        return cupr;
+        return nume;
     }
- 
+    
 }

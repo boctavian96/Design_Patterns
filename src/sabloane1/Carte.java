@@ -5,6 +5,7 @@
  */
 package sabloane1;
 
+import sabloane1.metadate.Cuprins;
 import java.util.List;
 
 /**

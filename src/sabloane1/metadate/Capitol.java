@@ -3,9 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sabloane1;
+package sabloane1.metadate;
 
 import java.util.List;
+import sabloane1.elemente_carte.Subcapitol;
 
 /**
  *
