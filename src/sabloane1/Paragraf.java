@@ -9,7 +9,7 @@ package sabloane1;
  *
  * @author octavian
  */
-class Paragraf {
+class Paragraf extends ElementPagina {
     public String paragraf;
     
     @Override 

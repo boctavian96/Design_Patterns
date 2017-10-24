@@ -9,7 +9,7 @@ package sabloane1;
  *
  * @author octavian
  */
-public class Imagine {
+public class Imagine extends ElementPagina {
     public String img;
     
     @Override 

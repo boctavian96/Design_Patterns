@@ -9,6 +9,6 @@ package sabloane1;
  *
  * @author octavian
  */
-public class Tabel {
+public class Tabel extends ElementPagina {
     
 }
