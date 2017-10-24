@@ -9,13 +9,9 @@ package sabloane1;
  *
  * @author octavian
  */
-public class Imagine extends ElementPagina {
-    public String img;
-
-    
-    @Override 
-    public String toString()
-    {
-        return img;
-    }
+public interface Element {
+    public void add(Element x);
+    public void remove(Element x);
+    public void get(int x);
+    public void print();
 }

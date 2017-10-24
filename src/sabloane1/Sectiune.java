@@ -9,13 +9,6 @@ package sabloane1;
  *
  * @author octavian
  */
-public class Imagine extends ElementPagina {
-    public String img;
-
+public class Sectiune extends ElementPagina {
     
-    @Override 
-    public String toString()
-    {
-        return img;
-    }
 }
