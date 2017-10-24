@@ -9,8 +9,19 @@ package sabloane1.elemente_carte;
  *
  * @author octavian
  */
-class Paragraf extends ElementPagina {
-    public String paragraf;
+class Paragraf extends AbstractElement {
+    private String paragraf;
+    
+    public Paragraf(String paragraf)
+    {
+        this.paragraf = paragraf;
+    }
+    
+    @Override
+    public void print()
+    {
+        System.out.println(paragraf);
+    }
     
     @Override 
     public String toString()

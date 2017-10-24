@@ -10,6 +10,7 @@ package sabloane1.elemente_carte;
  * @author octavian
  */
 public interface Element {
+    
     public void add(Element x);
     public void remove(Element x);
     public void get(int x);

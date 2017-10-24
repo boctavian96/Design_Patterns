@@ -9,6 +9,23 @@ package sabloane1.elemente_carte;
  *
  * @author octavian
  */
-public class Tabel extends ElementPagina {
+public class Tabel extends AbstractElement {
+    private String tabel;
     
+    public Tabel(String tabel)
+    {
+        this.tabel = tabel;
+    }
+    
+    @Override 
+    public void print()
+    {
+        System.out.println(tabel);
+    }
+    
+    @Override 
+    public String toString()
+    {
+        return tabel;
+    }
 }
