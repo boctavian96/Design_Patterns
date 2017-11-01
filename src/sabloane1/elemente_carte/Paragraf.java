@@ -5,22 +5,29 @@
  */
 package sabloane1.elemente_carte;
 
+import sabloane1.strategy.*;
 /**
  *
  * @author octavian
  */
 class Paragraf extends AbstractElement {
     private String paragraf;
+    private static AlignStrategy as;
     
     public Paragraf(String paragraf)
     {
         this.paragraf = paragraf;
     }
     
+    public void setAlign(AlignStrategy as)
+    {
+        this.as = as;
+    }
+    
     @Override
     public void print()
     {
-        System.out.println(paragraf);
+        as.printAligned(paragraf);
     }
     
     @Override 
