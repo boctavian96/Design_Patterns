@@ -10,9 +10,9 @@ import sabloane1.strategy.*;
  *
  * @author octavian
  */
-class Paragraf extends AbstractElement {
+public class Paragraf extends AbstractElement {
     private String paragraf;
-    private static AlignStrategy as;
+    private AlignStrategy as;
     
     public Paragraf(String paragraf)
     {

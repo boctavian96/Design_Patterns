@@ -9,11 +9,11 @@ package sabloane1.strategy;
  *
  * @author octavian
  */
-public class RA implements AlignStrategy {
+public class RaptorAlign implements AlignStrategy {
 
     @Override
     public void printAligned(String text) {
-       System.out.println("Printez pe rand" + text);
+       System.out.println("Printez pe rand " + text);
     }
 
 }
