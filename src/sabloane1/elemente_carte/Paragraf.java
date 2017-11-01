@@ -12,7 +12,7 @@ import sabloane1.strategy.*;
  */
 public class Paragraf extends AbstractElement {
     private String paragraf;
-    private AlignStrategy as;
+    private AlignStrategy as = null;
     
     public Paragraf(String paragraf)
     {
@@ -27,7 +27,10 @@ public class Paragraf extends AbstractElement {
     @Override
     public void print()
     {
-        as.printAligned(paragraf);
+        if(as != null)
+            as.printAligned(paragraf);
+        else 
+            System.out.println(paragraf);
     }
     
     @Override 
