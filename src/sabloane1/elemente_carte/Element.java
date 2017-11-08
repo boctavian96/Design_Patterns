@@ -5,6 +5,8 @@
  */
 package sabloane1.elemente_carte;
 
+import sabloane1.visitor.Visitor;
+
 /**
  *
  * @author octavian
@@ -15,4 +17,5 @@ public interface Element {
     public void remove(Element x);
     public void get(int x);
     public void print();
+    public void acceptVisitor(Visitor v);
 }

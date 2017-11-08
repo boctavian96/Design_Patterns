@@ -5,6 +5,8 @@
  */
 package sabloane1.elemente_carte;
 
+import sabloane1.visitor.Visitor;
+
 /**
  *
  * @author octavian
@@ -21,6 +23,12 @@ public class Tabel extends AbstractElement {
     public void print()
     {
         System.out.println(tabel);
+    }
+       
+    @Override
+    public void acceptVisitor(Visitor v)
+    {
+        v.visit(this);
     }
     
     @Override 

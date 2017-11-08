@@ -7,6 +7,7 @@ package sabloane1.proxy;
 
 import sabloane1.elemente_carte.AbstractElement;
 import sabloane1.elemente_carte.Imagine;
+import sabloane1.visitor.Visitor;
 
 /**
  *
@@ -30,6 +31,12 @@ public class ImageProxy extends AbstractElement {
         }
         
         realImg.print();
+    }
+        
+    @Override
+    public void acceptVisitor(Visitor v)
+    {
+        v.visit(this);
     }
     
 }

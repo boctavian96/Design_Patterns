@@ -6,6 +6,7 @@
 package sabloane1.elemente_carte;
 
 import sabloane1.strategy.*;
+import sabloane1.visitor.Visitor;
 /**
  *
  * @author octavian
@@ -31,6 +32,12 @@ public class Paragraf extends AbstractElement {
             as.printAligned(paragraf);
         else 
             System.out.println(paragraf);
+    }
+       
+    @Override
+    public void acceptVisitor(Visitor v)
+    {
+        v.visit(this);
     }
     
     @Override 

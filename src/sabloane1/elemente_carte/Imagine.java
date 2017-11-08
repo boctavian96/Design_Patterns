@@ -5,6 +5,8 @@
  */
 package sabloane1.elemente_carte;
 
+import sabloane1.visitor.Visitor;
+
 /**
  *
  * @author octavian
@@ -27,5 +29,11 @@ public class Imagine extends AbstractElement {
     public String toString()
     {
         return img;
+    }
+    
+    @Override
+    public void acceptVisitor(Visitor v)
+    {
+        v.visit(this);
     }
 }

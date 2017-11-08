@@ -7,6 +7,7 @@ package sabloane1.elemente_carte;
 
 import java.util.List;
 import java.util.ArrayList;
+import sabloane1.visitor.Visitor;
 /**
  *
  * @author octavian
@@ -38,6 +39,12 @@ public class Sectiune implements Element {
     @Override
     public void print() {
         System.out.println("Works");
+    }
+        
+    @Override
+    public void acceptVisitor(Visitor v)
+    {
+        v.visit(this);
     }
     
 }
