@@ -7,6 +7,9 @@ package sabloane1;
 
 import sabloane1.metadate.Cuprins;
 import java.util.List;
+import java.util.ArrayList;
+import sabloane1.elemente_carte.Element;
+import sabloane1.visitor.Visitor;
 
 /**
  *
@@ -17,6 +20,7 @@ public class Carte {
     private List capitol;
     private Cuprins cuprins;
     private String titlu;
+    private ArrayList<Element> continut;
     
     public Carte(List autor, List capitol, Cuprins cuprins, String Titlu)
     {
@@ -51,6 +55,6 @@ public class Carte {
     public void acceptVisitor(Visitor v)
     {
         for(Element i : continut)
-            i.accept(v); //TODO : SOLVE THE ERROR
+            i.acceptVisitor(v);
     }
 }
