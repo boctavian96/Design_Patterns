@@ -48,4 +48,23 @@ public class DocumentStatisticsVisitor implements Visitor {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
+    public int getNumarTabele()
+    {
+        return numarTabele;
+    }
+    
+    public int getNumarParagrafe()
+    {
+        return numarParagrafe;
+    }
+    
+    public int getNumarImagini()
+    {
+        return numarImagini;
+    }
+    
+    public int getNumarSectiuni()
+    {
+        return numarSectiuni;
+    }
 }
