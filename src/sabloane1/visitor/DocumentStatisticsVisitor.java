@@ -10,6 +10,7 @@ import sabloane1.elemente_carte.Paragraf;
 import sabloane1.elemente_carte.Sectiune;
 import sabloane1.elemente_carte.Tabel;
 import sabloane1.proxy.ImageProxy;
+import sabloane1.elemente_carte.Element;
 
 /**
  *
@@ -35,17 +36,17 @@ public class DocumentStatisticsVisitor implements Visitor {
 
     @Override
     public void visit(Imagine x) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        numarImagini++;
     }
 
     @Override
     public void visit(ImageProxy x) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        numarImagini++;
     }
 
     @Override
     public void visit(Sectiune x) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        numarSectiuni++;
     }
     
     public int getNumarTabele()

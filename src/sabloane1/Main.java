@@ -10,6 +10,7 @@ import sabloane1.elemente_carte.*;
 import sabloane1.metadate.*;
 import sabloane1.proxy.*;
 import sabloane1.strategy.*;
+import sabloane1.visitor.DocumentStatisticsVisitor;
 
 /**
  *
@@ -40,7 +41,27 @@ public class Main {
         s1.add(p2);
         
         
+        //Visitor demo
+        visitorDemo();
         
+        
+        
+    }
+    
+    private static void visitorDemo()
+    {
+       Element[] list = {new Paragraf("Bere"), new Paragraf("Tuica"), new Paragraf("Alcool"), new Tabel("1, 4, 2, 3"), new Tabel("grn")};
+       DocumentStatisticsVisitor visitor = new DocumentStatisticsVisitor();
+       
+       for(Element i : list)
+       {
+           i.acceptVisitor(visitor);
+       }
+       
+       System.out.println("Numar paragrafe " + visitor.getNumarParagrafe());
+       System.out.println("Numar tabele " + visitor.getNumarTabele());
+       System.out.println("Numar imagini " + visitor.getNumarImagini());
+       System.out.println("Numar sectiuni " + visitor.getNumarSectiuni());
     }
     
 }
