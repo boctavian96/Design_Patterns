@@ -47,4 +47,10 @@ public class Carte {
     {
         return autor;
     }
+    
+    public void acceptVisitor(Visitor v)
+    {
+        for(Element i : continut)
+            i.accept(v); //TODO : SOLVE THE ERROR
+    }
 }
