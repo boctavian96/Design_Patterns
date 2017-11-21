@@ -54,7 +54,8 @@ public class Carte {
     
     public void acceptVisitor(Visitor v)
     {
-        for(Element i : continut)
+        continut.forEach((i) -> {
             i.acceptVisitor(v);
+        });
     }
 }
