@@ -11,7 +11,10 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import sabloane1.elemente_carte.AbstractElement;
 import sabloane1.elemente_carte.Element;
+import sabloane1.elemente_carte.Paragraf;
+import sabloane1.visitor.Visitor;
 
 /**
  *
@@ -29,18 +32,23 @@ public class JSONBuiler implements Builder {
     @Override
     public void buildPart() {
         ObjectMapper jsonMp = new ObjectMapper();
-        HashMap<String, Object> hm;
+        HashMap<String, Object> hm = new HashMap<>();
         try {
             hm = jsonMp.readValue(new File(filename), HashMap.class);
         } catch (IOException ex) {
             Logger.getLogger(JSONBuiler.class.getName()).log(Level.SEVERE, null, ex);
         }
-               
+        document = buildDoc(hm);
     }
 
     @Override
     public Element getResult() {
         return document;
+    }
+
+    private Element buildDoc(HashMap<String, Object> hm) {
+        System.out.println("Sunt in JSON");
+        return new Paragraf(filename);
     }
     
    
