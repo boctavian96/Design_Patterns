@@ -13,7 +13,7 @@ import sabloane1.elemente_carte.Element;
  */
 public interface Builder {
     
-    void buildPart();
+    void buildPart(Element e);
     Element getResult();
     
 }

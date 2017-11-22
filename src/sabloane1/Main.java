@@ -5,10 +5,7 @@
  */
 package sabloane1;
 
-import sabloane1.*;
 import sabloane1.elemente_carte.*;
-import sabloane1.metadate.*;
-import sabloane1.proxy.*;
 import sabloane1.strategy.*;
 import sabloane1.visitor.DocumentStatisticsVisitor;
 
