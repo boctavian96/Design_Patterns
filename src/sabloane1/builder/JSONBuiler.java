@@ -14,6 +14,8 @@ import java.util.logging.Logger;
 import sabloane1.elemente_carte.AbstractElement;
 import sabloane1.elemente_carte.Element;
 import sabloane1.elemente_carte.Paragraf;
+import sabloane1.elemente_carte.Tabel;
+import sabloane1.proxy.ImageProxy;
 import sabloane1.visitor.Visitor;
 
 /**
@@ -38,7 +40,7 @@ public class JSONBuiler implements Builder {
         } catch (IOException ex) {
             Logger.getLogger(JSONBuiler.class.getName()).log(Level.SEVERE, null, ex);
         }
-        document = buildDoc(hm);
+        document = buildParagraf(hm);
     }
 
     @Override
@@ -46,11 +48,18 @@ public class JSONBuiler implements Builder {
         return document;
     }
 
-    private Element buildDoc(HashMap<String, Object> hm) {
+    private Element buildParagraf(HashMap<String, Object> hm) {
         System.out.println("Sunt in JSON");
         return new Paragraf(filename);
     }
     
-   
+    private Element buildImagine(HashMap<String, Object> hm) {
+        System.out.println("Sunt in JSON");
+        return new ImageProxy(filename);
+    }
     
+    private Element buildTabel(HashMap<String, Object> hm) {
+        System.out.println("Sunt in JSON");
+        return new Tabel(filename);
+    } 
 }
