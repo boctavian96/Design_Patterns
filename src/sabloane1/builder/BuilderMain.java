@@ -19,16 +19,9 @@ public class BuilderMain {
         Builder b = new JSONBuiler("book.json");
         Element book;
         
-        b.buildPart(new Paragraf("Ana are mere"));
+        b.buildPart();
         book = b.getResult();
         book.print();
-        
-        b.buildPart(new Tabel("1 / 2 / 5 / 4 / 4"));
-        book = b.getResult();
-        book.print();
-        
-        b.buildPart(new Imagine("Red alert image"));
-        book = b.getResult();
-        book.print();
+
     }
 }
