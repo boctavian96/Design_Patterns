@@ -20,7 +20,7 @@ public class BuilderMain {
         Element book;
         
         b.buildPart();
-        book = b.getResult();
+        book = b.getResult();   
         book.print();
 
     }

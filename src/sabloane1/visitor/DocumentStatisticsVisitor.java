@@ -10,7 +10,6 @@ import sabloane1.elemente_carte.Paragraf;
 import sabloane1.elemente_carte.Sectiune;
 import sabloane1.elemente_carte.Tabel;
 import sabloane1.proxy.ImageProxy;
-import sabloane1.elemente_carte.Element;
 
 /**
  *
@@ -67,5 +66,12 @@ public class DocumentStatisticsVisitor implements Visitor {
     public int getNumarSectiuni()
     {
         return numarSectiuni;
+    }
+    
+    public void printStatistics(){
+        System.out.println(getNumarImagini());
+        System.out.println(getNumarParagrafe());
+        System.out.println(getNumarSectiuni());
+        System.out.println(getNumarTabele());
     }
 }
