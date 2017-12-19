@@ -15,11 +15,20 @@ import sabloane1.visitor.Visitor;
 public class Sectiune implements Element {
     
     private List<Element> continut;
+    private String name;
+            
     
     public Sectiune()
     {
         continut = new ArrayList<Element>();
     }
+    
+    public Sectiune(String nume)
+    {
+        continut = new ArrayList<Element>();
+        this.name = nume;
+    }
+    
 
     @Override
     public void add(Element x) {

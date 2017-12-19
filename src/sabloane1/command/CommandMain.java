@@ -5,6 +5,9 @@
  */
 package sabloane1.command;
 
+import sabloane1.elemente_carte.Element;
+import sabloane1.singleton.DocumentManager;
+
 /**
  *
  * @author octavian
@@ -12,10 +15,12 @@ package sabloane1.command;
 public class CommandMain {
     
     public static void main(String[] args){
-        Command open = new OpenCommand();
+        Command open = new CreateSample();
         open.execute();
-        Command statistics = new StatisticsCommand();
-        statistics.execute();
+        Element book = DocumentManager.getElement();
+        Command del = new DeleteCommand();
+        del.execute();
+        book.print();
     }
     
 }

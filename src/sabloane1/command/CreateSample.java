@@ -5,6 +5,11 @@
  */
 package sabloane1.command;
 
+import sabloane1.elemente_carte.Element;
+import sabloane1.elemente_carte.Paragraf;
+import sabloane1.elemente_carte.Sectiune;
+import sabloane1.singleton.DocumentManager;
+
 /**
  *
  * @author octavian
@@ -13,7 +18,10 @@ public class CreateSample implements Command {
 
     @Override
     public void execute() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        Element book = new Sectiune("Book");
+        book.add(new Paragraf("Ana are mere"));
+        book.add(new Paragraf("Ana are pere"));
+        DocumentManager.getInstance().getElement();
     }
     
 }

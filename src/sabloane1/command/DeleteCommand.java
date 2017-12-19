@@ -5,6 +5,9 @@
  */
 package sabloane1.command;
 
+import sabloane1.elemente_carte.Element;
+import sabloane1.singleton.DocumentManager;
+
 /**
  *
  * @author octavian
@@ -13,7 +16,9 @@ public class DeleteCommand implements Command {
 
     @Override
     public void execute() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
+        Element boo = DocumentManager.getElement();
+        System.out.println("Deleted");
     }
     
 }
