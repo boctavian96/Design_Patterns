@@ -5,13 +5,14 @@
  */
 package sabloane1.elemente_carte;
 
+import sabloane1.observer.SubjectElement;
 import sabloane1.strategy.*;
 import sabloane1.visitor.Visitor;
 /**
  *
  * @author octavian
  */
-public class Paragraf extends AbstractElement {
+public class Paragraf extends SubjectElement {
     private String paragraf;
     private AlignStrategy as = null;
     
@@ -23,6 +24,7 @@ public class Paragraf extends AbstractElement {
     public void setAlign(AlignStrategy as)
     {
         this.as = as;
+        notifyAllObservers();
     }
     
     @Override
@@ -33,11 +35,16 @@ public class Paragraf extends AbstractElement {
         else 
             System.out.println(paragraf);
     }
+    
+    public void add(Element e){
+        notifyAllObservers();
+    }
        
     @Override
     public void acceptVisitor(Visitor v)
     {
         v.visit(this);
+        notifyAllObservers();
     }
     
     @Override 
