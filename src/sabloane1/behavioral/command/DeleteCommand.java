@@ -3,10 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sabloane1.command;
+package sabloane1.behavioral.command;
 
-import sabloane1.creational.builder.JSONBuiler;
-import sabloane1.creational.builder.Builder;
 import sabloane1.elemente_carte.Element;
 import sabloane1.creational.singleton.DocumentManager;
 
@@ -14,14 +12,13 @@ import sabloane1.creational.singleton.DocumentManager;
  *
  * @author octavian
  */
-public class OpenCommand implements Command {
+public class DeleteCommand implements Command {
 
     @Override
     public void execute() {
-        Builder builder = new JSONBuiler("book.json");
-        builder.buildPart();
-        Element book = builder.getResult();
-        DocumentManager.getInstance();
+        
+        Element boo = DocumentManager.getElement();
+        System.out.println("Deleted");
     }
     
 }

@@ -3,25 +3,25 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sabloane1.command;
+package sabloane1.behavioral.command;
 
+import sabloane1.creational.builder.JSONBuiler;
+import sabloane1.creational.builder.Builder;
 import sabloane1.elemente_carte.Element;
-import sabloane1.elemente_carte.Paragraf;
-import sabloane1.elemente_carte.Sectiune;
 import sabloane1.creational.singleton.DocumentManager;
 
 /**
  *
  * @author octavian
  */
-public class CreateSample implements Command {
+public class OpenCommand implements Command {
 
     @Override
     public void execute() {
-        Element book = new Sectiune("Book");
-        book.add(new Paragraf("Ana are mere"));
-        book.add(new Paragraf("Ana are pere"));
-        DocumentManager.getInstance().getElement();
+        Builder builder = new JSONBuiler("book.json");
+        builder.buildPart();
+        Element book = builder.getResult();
+        DocumentManager.getInstance();
     }
     
 }
