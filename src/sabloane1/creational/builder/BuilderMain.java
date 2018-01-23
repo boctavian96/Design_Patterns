@@ -3,24 +3,25 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sabloane1.command;
+package sabloane1.creational.builder;
 
+import sabloane1.elemente_carte.Imagine;
 import sabloane1.elemente_carte.Element;
-import sabloane1.creational.singleton.DocumentManager;
+import sabloane1.elemente_carte.Paragraf;
+import sabloane1.elemente_carte.Tabel;
 
 /**
  *
  * @author octavian
  */
-public class CommandMain {
-    
+public class BuilderMain {
     public static void main(String[] args){
-        Command open = new CreateSample();
-        open.execute();
-        Element book = DocumentManager.getElement();
-        Command del = new DeleteCommand();
-        del.execute();
+        Builder b = new JSONBuiler("book.json");
+        Element book;
+        
+        b.buildPart();
+        book = b.getResult();   
         book.print();
+
     }
-    
 }

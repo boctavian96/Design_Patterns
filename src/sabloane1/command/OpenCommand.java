@@ -5,9 +5,10 @@
  */
 package sabloane1.command;
 
-import sabloane1.builder.*;
+import sabloane1.creational.builder.JSONBuiler;
+import sabloane1.creational.builder.Builder;
 import sabloane1.elemente_carte.Element;
-import sabloane1.singleton.DocumentManager;
+import sabloane1.creational.singleton.DocumentManager;
 
 /**
  *

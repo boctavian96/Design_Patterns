@@ -5,7 +5,7 @@
  */
 package sabloane1.elemente_carte;
 
-import sabloane1.visitor.Visitor;
+import sabloane1.behavioral.visitor.Visitor;
 
 /**
  *

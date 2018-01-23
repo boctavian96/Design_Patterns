@@ -5,9 +5,9 @@
  */
 package sabloane1.elemente_carte;
 
-import sabloane1.observer.SubjectElement;
-import sabloane1.strategy.*;
-import sabloane1.visitor.Visitor;
+import sabloane1.behavioral.strategy.AlignStrategy;
+import sabloane1.behavioral.observer.SubjectElement;
+import sabloane1.behavioral.visitor.Visitor;
 /**
  *
  * @author octavian

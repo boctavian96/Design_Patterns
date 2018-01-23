@@ -5,9 +5,9 @@
  */
 package sabloane1.command;
 
+import sabloane1.behavioral.visitor.DocumentStatisticsVisitor;
+import sabloane1.creational.singleton.DocumentManager;
 import sabloane1.elemente_carte.Element;
-import sabloane1.visitor.*;
-import sabloane1.singleton.*;
 
 /**
  *

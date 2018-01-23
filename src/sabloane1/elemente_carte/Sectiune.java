@@ -7,7 +7,7 @@ package sabloane1.elemente_carte;
 
 import java.util.List;
 import java.util.ArrayList;
-import sabloane1.visitor.Visitor;
+import sabloane1.behavioral.visitor.Visitor;
 /**
  *
  * @author octavian

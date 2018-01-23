@@ -8,7 +8,7 @@ package sabloane1.command;
 import sabloane1.elemente_carte.Element;
 import sabloane1.elemente_carte.Paragraf;
 import sabloane1.elemente_carte.Sectiune;
-import sabloane1.singleton.DocumentManager;
+import sabloane1.creational.singleton.DocumentManager;
 
 /**
  *

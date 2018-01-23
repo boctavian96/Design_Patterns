@@ -9,7 +9,7 @@ import sabloane1.metadate.Cuprins;
 import java.util.List;
 import java.util.ArrayList;
 import sabloane1.elemente_carte.Element;
-import sabloane1.visitor.Visitor;
+import sabloane1.behavioral.visitor.Visitor;
 
 /**
  *

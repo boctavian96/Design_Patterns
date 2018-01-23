@@ -5,9 +5,12 @@
  */
 package sabloane1;
 
+import sabloane1.behavioral.strategy.ColumnAlign;
+import sabloane1.behavioral.strategy.RaptorAlign;
+import sabloane1.behavioral.strategy.AlignStrategy;
+import sabloane1.behavioral.strategy.LineAlign;
 import sabloane1.elemente_carte.*;
-import sabloane1.strategy.*;
-import sabloane1.visitor.DocumentStatisticsVisitor;
+import sabloane1.behavioral.visitor.DocumentStatisticsVisitor;
 
 /**
  *
